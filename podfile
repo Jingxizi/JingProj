@@ -2,4 +2,6 @@ platform :ios, ’9.3'
 target 'JingProj' do
 	pod 'AFNetworking', '~> 3.1.0'
 	pod 'BmobSDK', '~> 2.0.1'
+	pod 'MBProgressHUD', '~> 1.0.0'
+	pod 'ProgressHUD', '~> 2.4'
 end

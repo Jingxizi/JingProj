@@ -16,20 +16,17 @@ PODS:
     - AFNetworking/NSURLSession
   - BmobSDK (2.0.1)
   - MBProgressHUD (1.0.0)
-  - ProgressHUD (2.4)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.1.0)
   - BmobSDK (~> 2.0.1)
   - MBProgressHUD (~> 1.0.0)
-  - ProgressHUD (~> 2.4)
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   BmobSDK: 315013af15af31697a3b92cad2c74effed849b85
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
-  ProgressHUD: 4b66b0df0e08519c5c7283a198fd2867a114c95a
 
-PODFILE CHECKSUM: d211722a0eafa0fbe14eae0c200bdf96ecb7fe97
+PODFILE CHECKSUM: f77442502b6a7baa90b51a71c6c299b53ce419b2
 
 COCOAPODS: 1.1.1

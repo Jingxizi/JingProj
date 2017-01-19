@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		45E8BE89E3E92713C8530CBB /* libPods-JingProj.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6262DF9B31FF3FC6CBCA9C3B /* libPods-JingProj.a */; };
+		8C3554C71E2F6C8F00A05C09 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C3554C61E2F6C8F00A05C09 /* QuartzCore.framework */; };
+		8C3554C91E2F6C9800A05C09 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C3554C81E2F6C9800A05C09 /* CoreGraphics.framework */; };
+		8C3554CB1E2F6CA300A05C09 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C3554CA1E2F6CA300A05C09 /* UIKit.framework */; };
+		8C3554CD1E2F6CBE00A05C09 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C3554CC1E2F6CBE00A05C09 /* Foundation.framework */; };
 		8C933C611E2E1760008C6747 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C933C5F1E2E1760008C6747 /* MainViewController.m */; };
 		8C933C621E2E1760008C6747 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C933C601E2E1760008C6747 /* MainViewController.xib */; };
 		8CA3C3A11E24D287005BFDEF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CA3C3A01E24D287005BFDEF /* main.m */; };
@@ -44,6 +48,10 @@
 /* Begin PBXFileReference section */
 		6262DF9B31FF3FC6CBCA9C3B /* libPods-JingProj.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JingProj.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		62BCDE643EC59342C5D2C9FF /* Pods-JingProj.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JingProj.release.xcconfig"; path = "Pods/Target Support Files/Pods-JingProj/Pods-JingProj.release.xcconfig"; sourceTree = "<group>"; };
+		8C3554C61E2F6C8F00A05C09 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		8C3554C81E2F6C9800A05C09 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8C3554CA1E2F6CA300A05C09 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8C3554CC1E2F6CBE00A05C09 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8C933C5E1E2E1760008C6747 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		8C933C5F1E2E1760008C6747 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		8C933C601E2E1760008C6747 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
@@ -78,6 +86,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C3554CD1E2F6CBE00A05C09 /* Foundation.framework in Frameworks */,
+				8C3554CB1E2F6CA300A05C09 /* UIKit.framework in Frameworks */,
+				8C3554C91E2F6C9800A05C09 /* CoreGraphics.framework in Frameworks */,
+				8C3554C71E2F6C8F00A05C09 /* QuartzCore.framework in Frameworks */,
 				45E8BE89E3E92713C8530CBB /* libPods-JingProj.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -202,6 +214,10 @@
 		C5A9DAB85D4990FD96F316BC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8C3554CC1E2F6CBE00A05C09 /* Foundation.framework */,
+				8C3554CA1E2F6CA300A05C09 /* UIKit.framework */,
+				8C3554C81E2F6C9800A05C09 /* CoreGraphics.framework */,
+				8C3554C61E2F6C8F00A05C09 /* QuartzCore.framework */,
 				6262DF9B31FF3FC6CBCA9C3B /* libPods-JingProj.a */,
 			);
 			name = Frameworks;

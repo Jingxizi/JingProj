@@ -9,11 +9,17 @@
 #import "MainViewController.h"
 #import <BmobSDK/Bmob.h>
 #import "MBProgressHUD.h"
+#import <QuartzCore/QuartzCore.h>
 
 @interface MainViewController ()<NSURLSessionDelegate>
 {
     int count,titleNumber;
 }
+
+//@property (nonatomic, strong) NSArray<NSArray<MBExample *> *> *examples;
+// Atomic, because it may be cancelled from main thread, flag is read on a background thread
+@property (atomic, assign) BOOL canceled;
+
 
 @end
 
@@ -118,7 +124,7 @@
     
     // Update the UI on the main thread
     dispatch_async(dispatch_get_main_queue(), ^{
-        MBProgressHUD *hud = [MBProgressHUD HUDForView:self.navigationController.view];
+        MBProgressHUD *hud = [MBProgressHUD HUDForView:self.view];
         hud.mode = MBProgressHUDModeDeterminate;
         hud.progress = progress;
     });
@@ -127,3 +133,7 @@
 
 
 @end
+
+
+
+

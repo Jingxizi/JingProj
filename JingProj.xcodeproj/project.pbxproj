@@ -12,6 +12,7 @@
 		8C3554C91E2F6C9800A05C09 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C3554C81E2F6C9800A05C09 /* CoreGraphics.framework */; };
 		8C3554CB1E2F6CA300A05C09 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C3554CA1E2F6CA300A05C09 /* UIKit.framework */; };
 		8C3554CD1E2F6CBE00A05C09 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C3554CC1E2F6CBE00A05C09 /* Foundation.framework */; };
+		8C90160B1E52B3E40091825E /* cs.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8C90160A1E52B3E40091825E /* cs.txt */; };
 		8C933C611E2E1760008C6747 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C933C5F1E2E1760008C6747 /* MainViewController.m */; };
 		8C933C621E2E1760008C6747 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C933C601E2E1760008C6747 /* MainViewController.xib */; };
 		8CA3C3A11E24D287005BFDEF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CA3C3A01E24D287005BFDEF /* main.m */; };
@@ -52,6 +53,7 @@
 		8C3554C81E2F6C9800A05C09 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		8C3554CA1E2F6CA300A05C09 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8C3554CC1E2F6CBE00A05C09 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8C90160A1E52B3E40091825E /* cs.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cs.txt; sourceTree = "<group>"; };
 		8C933C5E1E2E1760008C6747 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		8C933C5F1E2E1760008C6747 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		8C933C601E2E1760008C6747 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 				8CA3C3AE1E24D287005BFDEF /* Assets.xcassets */,
 				8CA3C3B01E24D287005BFDEF /* LaunchScreen.storyboard */,
 				8CA3C3B31E24D287005BFDEF /* Info.plist */,
+				8C90160A1E52B3E40091825E /* cs.txt */,
 				8CA3C3AB1E24D287005BFDEF /* JingProj.xcdatamodeld */,
 				8CA3C39F1E24D287005BFDEF /* Supporting Files */,
 			);
@@ -333,6 +336,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C90160B1E52B3E40091825E /* cs.txt in Resources */,
 				8CA3C3B21E24D287005BFDEF /* LaunchScreen.storyboard in Resources */,
 				8CA3C3AF1E24D287005BFDEF /* Assets.xcassets in Resources */,
 				8CA3C3AA1E24D287005BFDEF /* Main.storyboard in Resources */,

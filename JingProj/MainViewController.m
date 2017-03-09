@@ -47,7 +47,7 @@
 */
 
 - (IBAction)readAct:(id)sender {
-    NSLog(@"read");
+//    NSLog(@"read");
 //    BmobQuery *query = [BmobQuery queryWithClassName:@"Test"];
 //    [query orderByDescending:@"updatedAt"];
 //    query.limit = 5;
@@ -57,12 +57,29 @@
 //        NSString *ad=NSStringFromClass([array[0] class]);
 //        NSLog(@"%@",ad);
 //        
-//        
 //        for (BmobObject *obj in array) {
 //            count+=array.count;
 //            NSLog(@"%@",obj);
 //        }
 //    }];
+    
+    
+//    NSBundle    *bundle = [NSBundle mainBundle];
+//    NSString *fileString = [NSString stringWithFormat:@"%@/cs.txt" ,[bundle bundlePath]];
+//    BmobObject *obj = [[BmobObject alloc] initWithClassName:@"GameScore"];
+//    BmobFile *file1 = [[BmobFile alloc] initWithFilePath:fileString];
+//    [file1 saveInBackground:^(BOOL isSuccessful, NSError *error) {
+//        //如果文件保存成功，则把文件添加到filetype列
+//        if (isSuccessful) {
+//            [obj setObject:file1  forKey:@"filetype"];
+//            [obj saveInBackground];
+//            //打印file文件的url地址
+//            NSLog(@"file1 url %@",file1.url);
+//        }else{
+//            //进行处理
+//        }
+//    }];
+    
 }
 
 - (IBAction)writeAct:(id)sender {
@@ -74,24 +91,24 @@
     hud.minSize = CGSizeMake(150.f, 100.f);
     
     [self doSomeNetworkWorkWithProgress];
-
+    
+    titleNumber++;
+    BmobObject *obj = [[BmobObject alloc] initWithClassName:@"Test"];
+    BmobObjectsBatch *batch=[[BmobObjectsBatch alloc] init];
     
     
-//    titleNumber++;
-//    BmobObject *obj = [[BmobObject alloc] initWithClassName:@"Test"];
-//    
-//    [obj setObject:[NSString stringWithFormat:@"标题%d",titleNumber] forKey:@"title"];
-//    [obj setObject:@"联系方式" forKey:@"phone"];
-//    [obj setObject:@"描述" forKey:@"describe"];
-//    
-//    [obj saveInBackgroundWithResultBlock:^(BOOL isSuccessful, NSError *error) {
-//        if (!error) {
-//            NSLog(@"提交成功");
-//        }else{
-//            NSLog(@"%@",error);
-//        }
-//        
-//    }];
+    [obj setObject:[NSString stringWithFormat:@"标题%d",titleNumber] forKey:@"title"];
+    [obj setObject:@"联系方式" forKey:@"phone"];
+    [obj setObject:@"描述" forKey:@"describe"];
+    
+    [obj saveInBackgroundWithResultBlock:^(BOOL isSuccessful, NSError *error) {
+        if (!error) {
+            NSLog(@"提交成功");
+        }else{
+            NSLog(@"%@",error);
+        }
+        
+    }];
 }
 
 - (void)doSomeNetworkWorkWithProgress {
